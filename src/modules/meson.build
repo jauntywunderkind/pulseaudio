@@ -46,6 +46,7 @@ all_modules = [
   [ 'module-role-ducking', ['module-role-ducking.c', 'stream-interaction.c'], 'stream-interaction.h' ],
   [ 'module-rtp-recv', 'rtp/module-rtp-recv.c', [], [], [], librtp ],
   [ 'module-rtp-send', 'rtp/module-rtp-send.c' , [], [], [], librtp ],
+  [ 'module-rtp-opus-send', 'rtp/module-rtp-opus-send.c' , [], [], [], librtp ],
   [ 'module-simple-protocol-tcp', 'module-protocol-stub.c', [], ['-DUSE_PROTOCOL_SIMPLE', '-DUSE_TCP_SOCKETS'], [], libprotocol_simple ],
   [ 'module-simple-protocol-unix', 'module-protocol-stub.c', [], ['-DUSE_PROTOCOL_SIMPLE', '-DUSE_UNIX_SOCKETS'], [], libprotocol_simple ],
   [ 'module-sine', 'module-sine.c' ],
