@@ -455,7 +455,7 @@ int pa__init(pa_module*m) {
     u->source_output = o;
 
     u->memblockq = pa_memblockq_new(
-            "module-rtp-send memblockq",
+            "module-rtp-opus-send memblockq",
             0,
             MEMBLOCKQ_MAXLENGTH,
             MEMBLOCKQ_MAXLENGTH,

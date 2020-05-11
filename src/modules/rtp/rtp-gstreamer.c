@@ -104,7 +104,7 @@ static bool init_send_pipeline_opus(pa_rtp_context *c, int fd, uint8_t payload, 
     port = g_inet_socket_address_get_port(addr);
 
     g_object_set(appsrc, "caps", caps, "is-live", TRUE, "blocksize", mtu, "format", 3 /* time */, NULL);
-	g_object_set(opus, "bitrate", 128000, "complexity", 10, "dtx", true, "frame-size", 5, , "max-payload-size", (1280*3)-400);
+	g_object_set(opus, "bitrate", 128000, "complexity", 10, "dtx", true, "frame-size", 5, "max-payload-size", (1280*3)-400, NULL);
     g_object_set(pay, "mtu", mtu, NULL);
     g_object_set(sink, "socket", socket, "host", addr_str, "port", port,
                  "enable-last-sample", FALSE, "sync", FALSE, "loop",
